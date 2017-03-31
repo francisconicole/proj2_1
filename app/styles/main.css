@@ -1,0 +1,168 @@
+.section {
+	text-align: center;
+}
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	height: 30px;
+	padding-top: .5%;
+	width: 10%;
+	text-align: center;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 60px;
+	z-index: 70;
+	width: 100%;
+	padding: 10px;
+	margin:0;
+}
+/*-----------------------history section-----------------------------------*/
+#history {
+	background-color: #F7C66A;
+}
+
+#sec_his {
+	font-size: 3em;
+	color: #5E6466;
+	text-shadow: 2px 2px 4px white;
+	padding-top: 30px;
+}
+
+#rail {
+	width: 63%;
+}
+
+#rodman {
+	width: 55%;
+}
+
+p {
+	font-size: 1.1em;
+	text-align: center;
+}
+
+#railway p {
+	padding-left: 25px;
+}
+
+/*--------------------------------Myth section------------------------------------*/
+#hogs {
+	background-color: #FCF0D9;
+	text-align: center;
+	border: solid #F7C66A 2px;
+}
+
+#hogs1 {
+	width: 50%;
+	margin-left: 25%;
+}
+
+#myth {
+	background-color: #FCF0D9;
+}
+
+#myth img {
+	width: 60%
+}
+
+h2 {
+	font-size: 3em;
+	text-shadow: 2px 2px 4px white;
+}
+
+#myth h4 {
+	font-size: 1.2em;
+}
+
+/*--------------------------------slides------------------------------*/
+#addPixi {
+	border: solid black 1px;
+}
+
+#slide2 video::-webkit-media-controls {
+	 display:none !important;
+}
+
+#slide1 {
+	background-color: #F7C66A;
+	font-size: 3em;
+}
+
+#slide2 {
+	background-color: #336627;
+	overflow: hidden;
+}
+
+#slide2 #myVideo {
+	right: 0;
+	bottom: 0;
+	top:0;
+	right:0;
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+  	background-position: center center;
+  	background-size: contain;
+   	object-fit: cover; /*cover video background */
+   	z-index:3;
+	}
+
+#cost {
+	list-style: none;
+	font-size: 2em;
+}
+	
+#loc {
+	float: left;
+	margin-left: 8%;
+	color: #614413;
+}
+
+#slide4 {
+	background-color: #CFE3CA;
+	background-image: url("../images/rob.jpg");
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+#slide4 h1 {
+	font-family: 'Creepster', cursive;
+}
+
+#slide4 h2 {
+	font-family: 'Creepster', cursive;
+}
+
+#slide3 {
+	background-color: #C7F2C2;
+	color: #614413;
+}
+
+#slide3 p {
+	font-size: 2em;
+}
+
+#slide3 h2 {
+	font-size: 3.5em;
+	font-family: 'Creepster', cursive;
+}
+
+#mudding {
+	font-family: 'Creepster', cursive;
+	color: #614413;
+}
