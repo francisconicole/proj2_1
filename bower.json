@@ -10,7 +10,8 @@
     "animate.css": "^3.5.2",
     "AniJS": "anijs#^0.9.3",
     "bootstrap": "^3.3.7",
-    "csshake": "^1.5.1"
+    "csshake": "^1.5.1",
+    "wow": "wow.js#^1.1.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",

@@ -10,8 +10,7 @@
 	width: 10%;
 	text-align: center;
 	color: #000;
-	background:#fff;
-	background: rgba(255,255,255, 0.5);
+	background-color:#CFBEA7;
 	-webkit-border-radius: 10px;
             border-radius: 10px;
 }
@@ -89,18 +88,65 @@ h2 {
 	font-size: 1.2em;
 }
 
+#what_now {
+	background-color: #F7C66A;
+}
+
+#mudding {
+	font-size: 3em;
+	color: #614413;
+}
+
+#give {
+	color: #614413;
+	font-size: 2em;
+}
+
+#arrow {
+	height: 20%;
+}
 /*--------------------------------slides------------------------------*/
 #addPixi {
 	border: solid black 1px;
 }
+
 
 #slide2 video::-webkit-media-controls {
 	 display:none !important;
 }
 
 #slide1 {
-	background-color: #F7C66A;
+	background-color: #FCF0D9;
 	font-size: 3em;
+}
+
+#what {
+	height: 70px;
+	width: 200px;
+	background-color: #754F1D;
+	color: tan;
+	font-size: .8em;
+	border: outset green 2px;
+}
+
+#wallers1 {
+	font-family: 'Creepster', cursive;
+	display: none;
+}
+
+.fp-controlArrow.fp-next {
+	border-color: transparent transparent transparent #336627;
+}
+
+.fp-controlArrow.fp-prev {
+	border-color: transparent #336627 transparent transparent;
+}
+
+#muddys {
+	display: none;
+	width: 100%;
+	height: 90%;
+	margin-top: 4%;
 }
 
 #slide2 {
@@ -129,28 +175,44 @@ h2 {
 	
 #loc {
 	float: left;
-	margin-left: 8%;
+	margin-left: 28%;
+	margin-top: 20%;
 	color: #614413;
+	text-align: center;
+}
+
+#loc p {
+	font-size: 1.5em;
 }
 
 #slide4 {
 	background-color: #CFE3CA;
-	background-image: url("../images/rob.jpg");
-	background-position: right;
-	background-repeat: no-repeat;
 }
 
-#slide4 h1 {
+#loc h1 {
+	font-family: 'Creepster', cursive;
+	font-size: 2em;
+}
+
+#loc h2 {
 	font-family: 'Creepster', cursive;
 }
 
-#slide4 h2 {
-	font-family: 'Creepster', cursive;
+#tab {
+	width: 100%;
+}
+
+#pict {
+	float: right;
 }
 
 #slide3 {
 	background-color: #C7F2C2;
 	color: #614413;
+	background-image: url('../images/mudd1.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 90%;
 }
 
 #slide3 p {
@@ -160,9 +222,27 @@ h2 {
 #slide3 h2 {
 	font-size: 3.5em;
 	font-family: 'Creepster', cursive;
+	width: 10%;
+	box-shadow: 3px 4px 5px 6px darkgreen;
+}
+#even {
+	margin-left: 40%;
 }
 
-#mudding {
-	font-family: 'Creepster', cursive;
-	color: #614413;
+#cost1 {
+	margin-left: 48%;
+}
+
+#cost {
+	background-color: #F2EAC7;
+	width: 15%;
+	margin-left: 45%;
+	box-shadow: 3px 4px 5px 6px #695727;
+}
+
+#dates {
+	background-color: #F2EAC7;
+	width: 35%;
+	margin-left: 25%;
+	box-shadow: 3px 4px 5px 6px #695727;
 }

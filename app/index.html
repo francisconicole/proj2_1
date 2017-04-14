@@ -34,7 +34,8 @@
 	<ul id="menu">
 		<li data-menuanchor="firstPage" class="hvr-curl-top-left"><a href="#firstPage">History</a></li>
 		<li data-menuanchor="secondPage" class="hvr-curl-top-left"><a href="#secondPage">Myth</a></li>
-		<li data-menuanchor="3rdPage" class="hvr-curl-top-left"><a href="#3rdPage">Today</a></li>
+		<li data-menuanchor="3rdPage" class="hvr-curl-top-left"><a href="#3rdPage">What Now</a></li>
+		<li data-menuanchor="4thPage" class="hvr-curl-top-left"><a href="#4thPage">Today</a></li>
 	</ul>
     <div id="fullpage">
 		<div class="section" id="history">
@@ -68,37 +69,47 @@
 		<div class="section" id="hogs">
 			<div id="myth">
 				<h2>Myth</h2>
-				<div id="hogs1">
-					<img src="Boar.gif" alt="boar" id="boar" onmouseover="PlayBoar('beepTwo')" onmouseout="StopBoar('beepTwo')">
-				</div>
-				<div class="shake-slow shake-constant">
-					<p>From the early days the area grew with population.  The main food source for these people were the wild hogs.  The hog population was high and caused issues with the local loggers.</p>
-					<p>There was lore about a monstrous Hog that tormented the farmers and loggers in the community.  Over time lore started about this Hog and how it became the hunter.</p>
-					<h4>It is said that on a cold quiet night peope can hear the strange sounds of a hog in the distance.  Is that Monstrous Hog still out there  hunting???
+				<div id="myth1" onmouseover="shake()" onmouseout="stopShake()">
+					<div id="hogs1">
+						<img src="Boar.gif" alt="boar" id="boar" onmouseover="PlayBoar('beepTwo')" onmouseout="StopBoar('beepTwo')">
+					</div>
+					<div>
+						<p>From the early days the area grew with population.  The main food source for these people were the wild hogs.  The hog population was high and caused issues with the local loggers.</p>
+						<p>There was lore about a monstrous Hog that tormented the farmers and loggers in the community.  Over time lore started about this Hog and how it became the hunter.</p>
+						<h4>It is said that on a cold quiet night peope can hear the strange sounds of a hog in the distance.  Is that Monstrous Hog still out there  hunting???
+					</div>
 				</div>
 				<audio id="beepTwo" preload="auto">
 					<source src="boar.mp3"></source>
 				</audio>
 			</div>
 		</div>
-		<div class="section">
+		<div class="section" id="what_now">
+			<h3 id="mudding">Even today the owners give to people but in a different way.</h3>
+			<p id="give">What it gives is.....</p>
+			<img src="images/arrow.png" alt="Arrow Down" id="arrow"> 
+		</div>
+		<div class="section" id="hogger">
 			<div class="slide" id="slide1"> 
-				<h3 id="addPixi1" onmouseover="PlayAtv('beepThree')" onmouseout="StopAtv('beepThree')"></h3>
 				<audio id="beepThree" preload="auto">
 					<source src="atv.mp3"></source>
 				</audio>
-				<h3 id="mudding">Even today the owners gives to people but in a different way.</h3>
-				<p>What it gives is.....</p>
+				<img src="images/mud.png" alt="mud" id="muddys">
+				<input type="button" value="What Now" onclick="atv()" id="what">
+				<h3 id="addPixi1" onmouseover="PlayAtv('beepThree')" onmouseout="StopAtv('beepThree')" onclick="today()"></h3>
+				<h1 id="wallers1">Hog Waller Mud Park</h1>
 			</div>
 			<div class="slide" id="slide2"> 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/VcubtUnAKfM?rel=0&autoplay=0" frameborder="0" allowfullscreen id="myVideo"></iframe>
 			</div>
 			<div class="slide" id="slide3"> 
-				<h2>Events</h2>
-				<p>April 20th, 21st, 22nd, 23rd</p>
-				<p>Trucks and ATVs Welcome</p>
-				<p>Music with Middle Ground Saturday starting at 7:30pm at the stage.</p>
-				<h2>Cost</h2>
+				<h2 id="even">Events</h2>
+				<div id="dates">
+					<p>April 20th, 21st, 22nd, 23rd</p>
+					<p>Trucks and ATVs Welcome</p>
+					<p>Music with Middle Ground Saturday starting at 7:30pm at the stage.</p>
+				</div>
+				<h2 id="cost1">Cost</h2>
 				<ul id="cost">
 					<li>Thur-Sun: $50</li>
 					<li>Fri-Sun: $40</li>
@@ -107,18 +118,25 @@
 				</ul>
 			</div>
 			<div class="slide" id="slide4">
-				<div id="loc">
-					<h1>Location</h1>
-					<p>400 County Road 310<br>
-					Palatka Florida</p>
-					<br><br>
-					<h2>Phone</h2>
-					<p>386-643-8042</p>
-					<h2>Email:</h2>
-					<p>mudbog@hogwallermudbog.com</p>
-					<h2>Facebook:</h2>
-					<p>www.facebook.com/theofficialhogwallermudbog</p>
-				</div>
+				<table id="tab">
+					<tr>
+						<td id="loc" class="picss">
+							<h1>Location</h1>
+							<p>400 County Road 310<br>
+							Palatka Florida</p>
+							<br><br>
+							<h2>Phone</h2>
+							<p>386-643-8042</p>
+							<h2>Email:</h2>
+							<p>mudbog@hogwallermudbog.com</p>
+							<h2>Facebook:</h2>
+							<p>www.facebook.com/theofficialhogwallermudbog</p>
+						</td>
+						<td class="picss">
+							<img src="images/rob.jpg" alt="rob muddy" id="pict">
+						</td>
+					</tr>
+				</table>
 			</div>
 		</div>
 	</div>
@@ -141,6 +159,7 @@
     <script src="/bower_components/pixi.js/dist/pixi.min.js"></script>
     <script src="/bower_components/AniJS/dist/anijs-min.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/wow/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

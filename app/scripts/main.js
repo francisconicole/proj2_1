@@ -1,13 +1,15 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-		anchors: ['firstPage', 'secondPage', '3rdPage'],
+		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
+		slidesNavigation: true,
+		slidesNavPosition: 'bottom',
 		menu: '#menu'
 	});
 	
 	var renderer = PIXI.autoDetectRenderer(1500,100, {transparent: true});
 	$('#addPixi').append(renderer.view);
 	var stage = new PIXI.Container();
-	var coach = PIXI.Sprite.fromImage('images/coach.png');
+	var coach = PIXI.Sprite.fromImage('../images/coach.png');
 	coach.anchor.x = 0.5;
 	coach.anchor.y = 0.5;
 	coach.position.x = 10;
@@ -17,19 +19,6 @@ $(document).ready(function() {
 	stage.border = 0;
 	stage.addChild(coach);
 	
-	var renderer1 = PIXI.autoDetectRenderer(1500,100, {transparent: true});
-	$('#addPixi1').append(renderer1.view);
-	var stage1 = new PIXI.Container();
-	var atv = PIXI.Sprite.fromImage('images/red.png');
-	atv.anchor.x = 0.5;
-	atv.anchor.y = 0.5;
-	atv.position.x = 10;
-	atv.position.y = 50;
-	atv.width = 200;
-	atv.height = 100;
-	stage1.border = 0;
-	stage1.addChild(atv);
-	
 	render();
 	
 	function render() {
@@ -38,19 +27,56 @@ $(document).ready(function() {
 			coach.position.x +=1;
 		}
 		renderer.render(stage);
-		
-		if(atv.position.x < 2000) {
-			atv.position.x +=3;
-		}
-		
-		if(atv.position.x < 200) {
-			atv.rotate = 45;
-		}
-		renderer1.render(stage1);
 	}
 	
-	
 });
+
+function atv() {
+	var renderer1 = PIXI.autoDetectRenderer(1500,100, {transparent: true});
+		$('#addPixi1').append(renderer1.view);
+		var stage1 = new PIXI.Container();
+		var atv = PIXI.Sprite.fromImage('../images/red.png');
+		atv.anchor.x = 0.5;
+		atv.anchor.y = 0.5;
+		atv.position.x = 10;
+		atv.position.y = 50;
+		atv.width = 200;
+		atv.height = 100;
+		stage1.border = 0;
+		stage1.addChild(atv);
+		
+		render();
+	
+		function render() {
+			requestAnimationFrame(render);
+			if(atv.position.x < 2000) {
+				atv.position.x +=10;
+			}
+			if (atv.position.x >= 1500) {
+				$('#muddys').show();
+				$('#muddys').addClass('animated zoomIn');
+				$('#muddys').removeClass('animated zoomIn');
+				$('#muddys').addClass('animated slideOutDown');
+				$('#muddys').css('-animation-duration', '3s');
+				$('#slide1').css('background-image', 'url("../images/hogwaller.png")');
+				$('#slide1').css('background-position', 'center');
+				$('#slide1').css('background-size', '50%');
+				$('#slide1').css('background-repeat', 'no-repeat');
+			}
+			
+			renderer1.render(stage1);
+			
+			$('#what').remove();
+		}
+}
+
+function shake() {
+	$('#myth1').addClass('shake-slow shake-constant');
+}
+
+function stopShake() {
+	$('#myth1').removeClass('shake-slow shake-constant');
+}
 
 function PlaySound(soundobj) {
 	var beepOne = document.getElementById(soundobj);
@@ -83,4 +109,5 @@ function StopAtv(soundobjec) {
 	var beepThree = document.getElementById(soundobjec);
 	beepThree.pause();
 }	
+
 
