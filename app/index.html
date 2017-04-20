@@ -32,20 +32,21 @@
     <![endif]-->
     
 	<ul id="menu">
-		<li data-menuanchor="firstPage" class="hvr-curl-top-left"><a href="#firstPage">History</a></li>
-		<li data-menuanchor="secondPage" class="hvr-curl-top-left"><a href="#secondPage">Myth</a></li>
-		<li data-menuanchor="3rdPage" class="hvr-curl-top-left"><a href="#3rdPage">What Now</a></li>
-		<li data-menuanchor="4thPage" class="hvr-curl-top-left"><a href="#4thPage">Today</a></li>
+		<li><a data-menuanchor="firstPage" class="hvr-curl-top-left" href="#firstPage">History</a></li>
+		<li><a data-menuanchor="secondPage" class="hvr-curl-top-left" href="#secondPage">Myth</a></li>
+		<li><a data-menuanchor="3rdPage" class="hvr-curl-top-left" href="#3rdPage">What Now</a></li>
+		<li><a data-menuanchor="4thPage" class="hvr-curl-top-left" href="#4thPage">Today</a></li>
 	</ul>
     <div id="fullpage">
 		<div class="section" id="history">
-			<h1 id="sec_his" class="animated zoomInRight">History of the area</h1>
+			<h1 id="sec_his" class="animated infinite pulse">History of the area</h1>
 			<p class="stageCoach" id="addPixi" onmouseover="PlaySound('beepOne')" onmouseout="StopSound('beepOne')"></p>
 			<table>
 				<tr>
 					<td>
 						<img src="images/log.jpg" alt="Lumber Yard" id="rodman" class="animated bounceInLeft">
 					</td>
+				
 					<td>
 						<img src="images/rail.jpg" alt="Railway" id="rail" class="animated bounceInRight">
 					</td>
@@ -56,6 +57,7 @@
 			This land was then bought and sold from 1892 to 1954.</p>
 						<p>1892 this land and surrounding land was bought by John J Cummings where he continued the lumber yards and naval store operations.</p>
 					</td>
+					
 					<td id="railway" class="animated bounceInRight">
 						<p>The land prospered for many years while the railroad ran through the town.  <br>Once it closed the land was sold off.  The land was bought by the Tilton family and turned into a ranch till the mid 70s.</p>
 						<p>In the mid 70s the land was bought and sold many times till the 90s where it was bought up by the current owners.</p>
@@ -87,29 +89,27 @@
 		<div class="section" id="what_now">
 			<h3 id="mudding">Even today the owners give to people but in a different way.</h3>
 			<p id="give">What it gives is.....</p>
-			<img src="images/arrow.png" alt="Arrow Down" id="arrow"> 
+			<img src="images/arrow.png" alt="Arrow Down" id="arrow" class="animated infinite pulse"> 
 		</div>
 		<div class="section" id="hogger">
 			<div class="slide" id="slide1"> 
-				<audio id="beepThree" preload="auto">
-					<source src="atv.mp3"></source>
-				</audio>
+				<audio id="beepThree" preload="auto" src="atv1.mp3"></audio>
 				<img src="images/mud.png" alt="mud" id="muddys">
-				<input type="button" value="What Now" onclick="atv()" id="what">
-				<h3 id="addPixi1" onmouseover="PlayAtv('beepThree')" onmouseout="StopAtv('beepThree')" onclick="today()"></h3>
+				<input type="button" value="What Now" onclick="atv()" id="what" class="animated infinite pulse">
+				<h3 id="addPixi1"></h3>
 				<h1 id="wallers1">Hog Waller Mud Park</h1>
 			</div>
 			<div class="slide" id="slide2"> 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/VcubtUnAKfM?rel=0&autoplay=0" frameborder="0" allowfullscreen id="myVideo"></iframe>
 			</div>
 			<div class="slide" id="slide3"> 
-				<h2 id="even">Events</h2>
+				<h2 id="even" class="animated infinite pulse">Events</h2>
 				<div id="dates">
 					<p>April 20th, 21st, 22nd, 23rd</p>
 					<p>Trucks and ATVs Welcome</p>
 					<p>Music with Middle Ground Saturday starting at 7:30pm at the stage.</p>
 				</div>
-				<h2 id="cost1">Cost</h2>
+				<h2 id="cost1" class="animated infinite pulse">Cost</h2>
 				<ul id="cost">
 					<li>Thur-Sun: $50</li>
 					<li>Fri-Sun: $40</li>
@@ -132,8 +132,28 @@
 							<h2>Facebook:</h2>
 							<p>www.facebook.com/theofficialhogwallermudbog</p>
 						</td>
-						<td class="picss">
-							<img src="images/rob.jpg" alt="rob muddy" id="pict">
+						<td id="picss">
+							<div class='sld1'>
+								<img src="images/rob.jpg" alt="rob in mud">
+							</div>
+							<div class='sld2'>
+								<img src="images/ride.jpg" alt="muddy">
+							</div>
+							<div class='sld3'>
+								<img src="images/ride1.jpg" alt="muddy">
+							</div>
+							<div class='sld4'>
+								<img src="images/ride11.jpg" alt="muddy">
+							</div>
+							<div class='sld5'>
+								<img src="images/ride3.jpg" alt="muddy">
+							</div>
+							<div class='sld6'>
+								<img src="images/ride4.jpg" alt="muddy">
+							</div>
+							<div class='sld7'>
+								<img src="images/ride5.jpg" alt="muddy">
+							</div>
 						</td>
 					</tr>
 				</table>

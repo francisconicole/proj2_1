@@ -7,17 +7,12 @@
 	margin: 10px;
 	height: 30px;
 	padding-top: .5%;
-	width: 10%;
+	width: 6%;
 	text-align: center;
 	color: #000;
 	background-color:#CFBEA7;
 	-webkit-border-radius: 10px;
             border-radius: 10px;
-}
-
-#menu li a{
-	text-decoration:none;
-	color: #000;
 }
 
 #menu{
@@ -29,6 +24,13 @@
 	width: 100%;
 	padding: 10px;
 	margin:0;
+}
+
+#menu li a{
+	text-decoration:none;
+	color: #000;
+	width: 100%;
+	display: block;
 }
 /*-----------------------history section-----------------------------------*/
 #history {
@@ -108,12 +110,16 @@ h2 {
 /*--------------------------------slides------------------------------*/
 #addPixi {
 	border: solid black 1px;
+	background-image: url('../rain.gif');
 }
 
-
-#slide2 video::-webkit-media-controls {
-	 display:none !important;
+#slide1 input:hover {
+	background-color: tan;
+	color: #754F1D;
+	font-family: 'Creepster', cursive;
+	text-shadow: 1px 1px white;
 }
+
 
 #slide1 {
 	background-color: #FCF0D9;
@@ -176,7 +182,7 @@ h2 {
 #loc {
 	float: left;
 	margin-left: 28%;
-	margin-top: 20%;
+	margin-top: 5%;
 	color: #614413;
 	text-align: center;
 }
@@ -223,7 +229,7 @@ h2 {
 	font-size: 3.5em;
 	font-family: 'Creepster', cursive;
 	width: 10%;
-	box-shadow: 3px 4px 5px 6px darkgreen;
+	box-shadow: 3px 4px 5px 6px #735D17;
 }
 #even {
 	margin-left: 40%;
@@ -245,4 +251,13 @@ h2 {
 	width: 35%;
 	margin-left: 25%;
 	box-shadow: 3px 4px 5px 6px #695727;
+}
+
+#picss {
+	width: 50%;
+}
+
+#picss div img {
+	width: 100%;
+	height: 100%;
 }
