@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>workshop2</title>
 	<link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Coming+Soon|Source+Sans+Pro" rel="stylesheet">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="/bower_components/hover/css/hover.css" />
     <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
     <link rel="stylesheet" href="/bower_components/csshake/dist/csshake.css" />
+    <link rel="stylesheet" href="/bower_components/aos/dist/aos.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -32,14 +34,18 @@
     <![endif]-->
     
 	<ul id="menu">
-		<li><a data-menuanchor="firstPage" class="hvr-curl-top-left" href="#firstPage">History</a></li>
-		<li><a data-menuanchor="secondPage" class="hvr-curl-top-left" href="#secondPage">Myth</a></li>
-		<li><a data-menuanchor="3rdPage" class="hvr-curl-top-left" href="#3rdPage">What Now</a></li>
-		<li><a data-menuanchor="4thPage" class="hvr-curl-top-left" href="#4thPage">Today</a></li>
+		<li id="author">
+			<p>Designed by Nicole Francisco&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Email: franciscon@knights.ucf.edu</p>
+		</li><br>
+		<li class="hvr-curl-top-left"><a data-menuanchor="firstPage" href="#firstPage">History</a></li>
+		<li class="hvr-curl-top-left"><a data-menuanchor="secondPage" href="#secondPage">Myth</a></li>
+		<li class="hvr-curl-top-left"><a data-menuanchor="3rdPage" href="#3rdPage">What Now</a></li>
+		<li class="hvr-curl-top-left"><a data-menuanchor="4thPage" href="#4thPage">Today</a></li>
 	</ul>
     <div id="fullpage">
 		<div class="section" id="history">
-			<h1 id="sec_his" class="animated infinite pulse">History of the area</h1>
+			<h1 id="sec_his" class="animated tada">History of the area</h1>
 			<p class="stageCoach" id="addPixi" onmouseover="PlaySound('beepOne')" onmouseout="StopSound('beepOne')"></p>
 			<table>
 				<tr>
@@ -67,6 +73,7 @@
 			<audio id="beepOne" preload="auto">
 				<source src="horse.mp3"></source>
 			</audio>
+	
 		</div>
 		<div class="section" id="hogs">
 			<div id="myth">
@@ -89,7 +96,7 @@
 		<div class="section" id="what_now">
 			<h3 id="mudding">Even today the owners give to people but in a different way.</h3>
 			<p id="give">What it gives is.....</p>
-			<img src="images/arrow.png" alt="Arrow Down" id="arrow" class="animated infinite pulse"> 
+			<img src="images/arrow.png" alt="Arrow Down" id="arrow" class="animated infinite pulse">
 		</div>
 		<div class="section" id="hogger">
 			<div class="slide" id="slide1"> 
@@ -97,19 +104,18 @@
 				<img src="images/mud.png" alt="mud" id="muddys">
 				<input type="button" value="What Now" onclick="atv()" id="what" class="animated infinite pulse">
 				<h3 id="addPixi1"></h3>
-				<h1 id="wallers1">Hog Waller Mud Park</h1>
 			</div>
 			<div class="slide" id="slide2"> 
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/VcubtUnAKfM?rel=0&autoplay=0" frameborder="0" allowfullscreen id="myVideo"></iframe>
 			</div>
 			<div class="slide" id="slide3"> 
-				<h2 id="even" class="animated infinite pulse">Events</h2>
+				<h2 id="even">Events</h2>
 				<div id="dates">
 					<p>April 20th, 21st, 22nd, 23rd</p>
 					<p>Trucks and ATVs Welcome</p>
-					<p>Music with Middle Ground Saturday starting at 7:30pm at the stage.</p>
+					<p>Music with Middle Ground Saturday <br> starting at 7:30pm at the stage.</p>
 				</div>
-				<h2 id="cost1" class="animated infinite pulse">Cost</h2>
+				<h2 id="cost1">Cost</h2>
 				<ul id="cost">
 					<li>Thur-Sun: $50</li>
 					<li>Fri-Sun: $40</li>
@@ -121,16 +127,15 @@
 				<table id="tab">
 					<tr>
 						<td id="loc" class="picss">
-							<h1>Location</h1>
+							<h2>Location</h2>
 							<p>400 County Road 310<br>
 							Palatka Florida</p>
-							<br><br>
 							<h2>Phone</h2>
-							<p>386-643-8042</p>
+							<p>386-643-8042 (text only)</p>
 							<h2>Email:</h2>
 							<p>mudbog@hogwallermudbog.com</p>
 							<h2>Facebook:</h2>
-							<p>www.facebook.com/theofficialhogwallermudbog</p>
+							<a href="http://www.facebook.com/theofficialhogwallermudbog"><img src="images/click.png" alt="facebook link"  id="face_splat"></a>
 						</td>
 						<td id="picss">
 							<div class='sld1'>
@@ -178,8 +183,8 @@
     <script src="/bower_components/fullpage.js/dist/jquery.fullpage.js"></script>
     <script src="/bower_components/pixi.js/dist/pixi.min.js"></script>
     <script src="/bower_components/AniJS/dist/anijs-min.js"></script>
+    <script src="/bower_components/aos/dist/aos.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    <script src="/bower_components/wow/dist/wow.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     

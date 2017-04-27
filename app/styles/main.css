@@ -1,3 +1,4 @@
+
 .section {
 	text-align: center;
 }
@@ -10,7 +11,7 @@
 	width: 6%;
 	text-align: center;
 	color: #000;
-	background-color:#CFBEA7;
+	background-color: #69532F;
 	-webkit-border-radius: 10px;
             border-radius: 10px;
 }
@@ -22,20 +23,38 @@
 	height: 60px;
 	z-index: 70;
 	width: 100%;
-	padding: 10px;
+	padding: 5px;
+	padding-top: 0;
 	margin:0;
 }
 
 #menu li a{
 	text-decoration:none;
-	color: #000;
+	color: #FCF0D9;
 	width: 100%;
 	display: block;
+	font-family: 'Coming Soon', cursive;
+	font-weight: bold;
 }
+
+#menu #author {
+	opacity: .5;
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 500px;
+	background: transparent;
+	color: #69532F;
+	padding-top:0;
+	margin-top:0;
+}
+
 /*-----------------------history section-----------------------------------*/
 #history {
 	background-color: #F7C66A;
+	font-family: 'Coming Soon', cursive;
+	font-weight: bold;
 }
+
+
 
 #sec_his {
 	font-size: 3em;
@@ -45,11 +64,11 @@
 }
 
 #rail {
-	width: 63%;
+	width: 57%;
 }
 
 #rodman {
-	width: 55%;
+	width: 45%;
 }
 
 p {
@@ -57,14 +76,22 @@ p {
 	text-align: center;
 }
 
+#hist {
+	font-size: 1em;
+	font-family: 'Coming Soon', cursive;
+}
+
 #railway p {
 	padding-left: 25px;
+	font-size: 1em;
+	font-family: 'Coming Soon', cursive;
 }
 
 /*--------------------------------Myth section------------------------------------*/
 #hogs {
 	background-color: #FCF0D9;
 	text-align: center;
+	font-family: 'Coming Soon', cursive;
 	border: solid #F7C66A 2px;
 }
 
@@ -87,6 +114,10 @@ h2 {
 }
 
 #myth h4 {
+	font-size: 1.7em;
+}
+
+#myth p {
 	font-size: 1.2em;
 }
 
@@ -97,15 +128,17 @@ h2 {
 #mudding {
 	font-size: 3em;
 	color: #614413;
+	font-family: 'Coming Soon', cursive;
 }
 
 #give {
 	color: #614413;
 	font-size: 2em;
+	font-family: 'Coming Soon', cursive;
 }
 
 #arrow {
-	height: 20%;
+	height: 30%;
 }
 /*--------------------------------slides------------------------------*/
 #addPixi {
@@ -114,7 +147,7 @@ h2 {
 }
 
 #slide1 input:hover {
-	background-color: tan;
+	background-color: #F7EDDC;
 	color: #754F1D;
 	font-family: 'Creepster', cursive;
 	text-shadow: 1px 1px white;
@@ -130,22 +163,17 @@ h2 {
 	height: 70px;
 	width: 200px;
 	background-color: #754F1D;
-	color: tan;
+	color: #F7EDDC;
 	font-size: .8em;
-	border: outset green 2px;
-}
-
-#wallers1 {
-	font-family: 'Creepster', cursive;
-	display: none;
+	border: outset green 3px;
 }
 
 .fp-controlArrow.fp-next {
-	border-color: transparent transparent transparent #336627;
+	border-color: transparent transparent transparent #754F1D;
 }
 
 .fp-controlArrow.fp-prev {
-	border-color: transparent #336627 transparent transparent;
+	border-color: transparent #754F1D transparent transparent;
 }
 
 #muddys {
@@ -173,35 +201,30 @@ h2 {
    	object-fit: cover; /*cover video background */
    	z-index:3;
 	}
-
-#cost {
-	list-style: none;
-	font-size: 2em;
-}
 	
 #loc {
 	float: left;
-	margin-left: 28%;
-	margin-top: 5%;
+	margin-left: 16%;
 	color: #614413;
 	text-align: center;
+	margin-top: 12%;
 }
 
 #loc p {
 	font-size: 1.5em;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 #slide4 {
-	background-color: #CFE3CA;
+	background-color: #FCF0D9;
 }
 
-#loc h1 {
-	font-family: 'Creepster', cursive;
-	font-size: 2em;
-}
 
 #loc h2 {
 	font-family: 'Creepster', cursive;
+	font-size: 2.5em;
+	padding-bottom:0;
+	margin-bottom:0;
 }
 
 #tab {
@@ -213,7 +236,7 @@ h2 {
 }
 
 #slide3 {
-	background-color: #C7F2C2;
+	background-color: #FCF0D9;
 	color: #614413;
 	background-image: url('../images/mudd1.png');
 	background-repeat: no-repeat;
@@ -227,30 +250,60 @@ h2 {
 
 #slide3 h2 {
 	font-size: 3.5em;
-	font-family: 'Creepster', cursive;
-	width: 10%;
-	box-shadow: 3px 4px 5px 6px #735D17;
+	font-family: 'Source Sans Pro', sans-serif;
 }
+
 #even {
 	margin-left: 40%;
+	background-color: #614413;
+	text-shadow: 2px 2px 2px #A7DEA0;
+	color: #F2EAC7; 
+	width: 11%;
+	text-align: center;
+	padding-bottom: 3px;
+	box-shadow: 3px 4px 5px 6px #695727;
 }
 
 #cost1 {
 	margin-left: 48%;
+	background-color: #614413;
+	color: #F2EAC7;
+	width: 10%;
+	text-align: center;
+	padding-bottom: 3px;
+	box-shadow: 3px 4px 5px 6px #695727;
+	text-shadow: 2px 2px 2px #A7DEA0;
 }
 
 #cost {
-	background-color: #F2EAC7;
-	width: 15%;
+	background-color: #614413;
+	width: 13%;
 	margin-left: 45%;
 	box-shadow: 3px 4px 5px 6px #695727;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 2em;
+	list-style: none;
+	padding-top: 2px;
+	padding-bottom:2px;
+	padding-right: 4px;
+	background-image: url('../images/splat.png');
+	background-size: 30%;
+	background-position: center;
+	color: #F2EAC7;
+	text-align: center;
 }
 
 #dates {
-	background-color: #F2EAC7;
+	background-color: #614413;
 	width: 35%;
 	margin-left: 25%;
 	box-shadow: 3px 4px 5px 6px #695727;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #F2EAC7;
+	padding-top: 1px;
+	padding-bottom:1px;
+	padding-left: 2px;
+	padding-right: 2px;
 }
 
 #picss {
@@ -260,4 +313,10 @@ h2 {
 #picss div img {
 	width: 100%;
 	height: 100%;
+}
+
+
+#face_splat {
+	width: 30%;
+	padding-bottom: 10px;
 }

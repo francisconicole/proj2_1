@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $('#fullpage').fullpage({
 		anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage'],
@@ -40,8 +39,9 @@ setInterval(function() {
 	.end()
 	.appendTo('#picss');
 }, 5000);
-});
 
+});
+AOS.init();
 
 function atv() {
 	var renderer1 = PIXI.autoDetectRenderer(1500,100, {transparent: true});
@@ -71,7 +71,7 @@ function atv() {
 				$('#muddys').addClass('animated zoomIn');
 				$('#muddys').removeClass('animated zoomIn');
 				$('#muddys').addClass('animated slideOutDown');
-				$('#muddys').css('-animation-duration', '3s');
+				$('#muddys').css('-animation-duration', '5s');
 				$('#slide1').css('background-image', 'url("images/hogwaller.png")');
 				$('#slide1').css('background-position', 'center');
 				$('#slide1').css('background-size', '50%');
