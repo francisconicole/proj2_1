@@ -37,16 +37,6 @@
 	font-weight: bold;
 }
 
-#menu #author {
-	opacity: .5;
-	font-family: 'Source Sans Pro', sans-serif;
-	width: 500px;
-	background: transparent;
-	color: #69532F;
-	padding-top:0;
-	margin-top:0;
-}
-
 /*-----------------------history section-----------------------------------*/
 #history {
 	background-color: #F7C66A;
@@ -114,7 +104,7 @@ h2 {
 }
 
 #myth h4 {
-	font-size: 1.7em;
+	font-size: 1.2em;
 }
 
 #myth p {
@@ -207,7 +197,7 @@ h2 {
 	margin-left: 16%;
 	color: #614413;
 	text-align: center;
-	margin-top: 12%;
+	margin-top: 6%;
 }
 
 #loc p {
@@ -245,11 +235,11 @@ h2 {
 }
 
 #slide3 p {
-	font-size: 2em;
+	font-size: 1.5em;
 }
 
 #slide3 h2 {
-	font-size: 3.5em;
+	font-size: 2.5em;
 	font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -286,9 +276,6 @@ h2 {
 	padding-top: 2px;
 	padding-bottom:2px;
 	padding-right: 4px;
-	background-image: url('../images/splat.png');
-	background-size: 30%;
-	background-position: center;
 	color: #F2EAC7;
 	text-align: center;
 }
