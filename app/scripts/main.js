@@ -41,7 +41,6 @@ setInterval(function() {
 }, 5000);
 
 });
-AOS.init();
 
 function atv() {
 	var renderer1 = PIXI.autoDetectRenderer(1500,100, {transparent: true});
